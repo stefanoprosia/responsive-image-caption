@@ -22,29 +22,68 @@ body {
   padding: 0;
 }
 
-div {
+figure {
   background-color: #e2e2e2;
+  margin: 0;
+}
+
+figcaption {
+  margin-bottom: 1rem;
 }
 
 .img-flex {
   display: block;
   width: 100%;
+  background-color: #e2e2e2;
+  padding: 0;
+  margin: 0;
 
 }
 
 h2 {
   font-family: "Denk One", sans-serif;
-  font-size: 2rem;
-  padding-left: 1rem;
-  padding-bottom: 0;
+  font-size: 1.5rem;
+  margin-left: .5rem;
 }
 
 p {
-  margin-bottom: 0;
-  padding: 1rem;
-  padding-top: 0;
+  margin-left: .5rem;
 }
 
 @media only screen and (min-width: 38em) {
-  
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  figure {
+    position: relative;
+  }
+
+  figcaption {
+    background-color: rgba(0, 0, 0, .3);
+    position: absolute;
+    border-radius: 8px;
+    right: 30px;
+    bottom: 40px;
+    color: #fff;
+
+  }
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+    line-height: 1.5;
+  }
 }
